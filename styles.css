@@ -1,0 +1,610 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: #f4f4f4;
+}
+
+.services, .booking, .contact {
+    padding: 2rem 1rem;
+    width: 90%;
+    margin: auto;
+}
+
+.services .service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about {
+    padding: 2rem 1rem;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+.about p {
+    margin: 1rem 0;
+    line-height: 1.6;
+}
+h2, h3 {
+    text-align: left;      /* Menyelaraskan teks ke kiri */
+    color: #333;          /* Warna teks */
+    margin: 0;            /* Menghapus margin default */
+    padding-left: 20px;      /* Memberi jarak dari tepi kiri */
+}
+
+}
+
+.about, .vision {
+    padding: 2rem 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.vision ul {
+    list-style: disc;
+    margin-left: 2rem;
+    line-height: 1.6;
+}
+.hero img {
+    max-width: 50%;  /* Logo akan menyesuaikan setengah lebar layar */
+    height: auto;    /* Mempertahankan rasio gambar */
+    margin: 0 auto;  /* Memusatkan logo secara horizontal */
+}
+
+/* Responsif untuk perangkat besar (laptop atau desktop) */
+@media (min-width: 1024px) {
+    .hero img {
+        max-width: 30%; /* Kurangi ukuran logo pada layar besar */
+    }
+}
+
+/* Responsif untuk perangkat kecil (smartphone) */
+@media (max-width: 768px) {
+    .hero img {
+        max-width: 70%; /* Perbesar logo pada layar kecil */
+    }
+}
+
+}
+
+.booking form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: auto;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#/* Elemen utama Home */
+#home {
+    position: relative;
+    width: 100%; /* Mengisi seluruh lebar layar */
+    height: 100vh; /* Mengisi tinggi layar penuh */
+    display: flex;
+    justify-content: center; /* Memusatkan konten secara horizontal */
+    align-items: center; /* Memusatkan konten secara vertikal */
+    overflow: hidden; /* Sembunyikan elemen yang meluap */
+    background: rgba(0, 0, 0, 0.3); /* Tambahkan sedikit transparansi latar jika diperlukan */
+}
+
+
+}
+
+#home {
+    position: relative;
+    width: 100%; /* Mengisi seluruh lebar layar */
+    height: 100vh; /* Mengisi tinggi layar penuh */
+    display: flex;
+    justify-content: center; /* Memusatkan konten secara horizontal */
+    align-items: center; /* Memusatkan konten secara vertikal */
+}
+
+.moving-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('un2.png'); /* Ganti dengan gambar latar belakang Anda */
+    background-size: cover;
+    background-position: center;
+    animation: moveBackground 10s linear infinite; /* Menambahkan animasi */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Meredupkan latar belakang dengan warna hitam transparan */
+    z-index: 1; /* Pastikan overlay berada di atas latar belakang */
+}
+
+.company-logo {
+    position: relative;
+    z-index: 2; /* Pastikan logo berada di atas overlay */
+    max-width: 80%; /* Sesuaikan ukuran logo */
+    height: auto; /* Mempertahankan rasio aspek */
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+}
+.pricelist {
+    padding: 2rem 1rem;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.price-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.price-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+.pemesanan {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #f9f9f9;
+    margin-top: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #20b359;
+}
+/* Section Umum */
+section {
+    padding: 3rem 1rem;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    background: #fff;
+    text-align: center;
+}
+
+/* Gaya untuk Tentang Kami */
+.about-container {
+    background: linear-gradient(45deg, #e3f2fd, #ffffff);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+/* Gaya untuk Visi dan Misi */
+.vision-container {
+    background: #f4f4f4;
+    padding: 2rem;
+}
+
+.vision-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.vision-content ul li {
+    position: relative;
+    margin: 0.5rem 0;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.vision-content ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #25D366;
+}
+
+/* Gaya untuk Daftar Harga */
+/* Wrapper untuk menyusun container secara horizontal */
+.pricelist-pemesanan-wrapper {
+    display: flex; /* Mengatur elemen anak secara horizontal */
+    justify-content: space-between; /* Memberi jarak maksimal antara elemen */
+    align-items: flex-start; /* Menyelaraskan elemen di bagian atas */
+    gap: 1rem; /* Memberikan jarak antara kedua elemen */
+    margin: 2rem 0; /* Memberi jarak atas dan bawah untuk wrapper */
+}
+
+/* Gaya untuk container daftar harga */
+.pricelist-container {
+    background: #eaf9ea;
+    padding: 2rem;
+    text-align: center;
+    flex: 1; /* Membuat elemen ini fleksibel dan lebar sesuai sisa ruang */
+}
+
+/* Gaya paragraf dalam pricelist */
+.pricelist-container p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Gaya untuk link harga */
+.price-link {
+    display: inline-block;
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #007bff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.price-link:hover {
+    background: #007bff;
+    color: white;
+}
+
+/* Wrapper untuk bagian lihat dan pesan */
+.lihat-pesan-section {
+    background-image: url("un3.png"); /* Gambar latar belakang */
+    background-repeat: no-repeat; /* Jangan ulangi gambar */
+    background-size: cover; /* Gambar akan menutupi seluruh area */
+    background-position: center; /* Pusatkan gambar */
+    padding: 3rem; /* Jarak dalam yang membuat gambar terlihat sebagai padding */
+    border-radius: 10px; /* Sudut melengkung untuk estetika */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk efek mengangkat */
+}
+
+/* Gaya judul */
+.section-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Wrapper untuk daftar harga dan pesan sekarang */
+.pricelist-pemesanan-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto; /* Pusatkan konten */
+}
+
+/* Gaya untuk daftar harga */
+.pricelist-container {
+    background: #eaf9ea;
+    padding: 2rem;
+    text-align: center;
+    flex: 1;
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Bayangan lebih timbul */
+    transform: translateY(-5px); /* Menambahkan efek terangkat */
+}
+
+/* Gaya untuk pesan sekarang */
+.pemesanan-container {
+    background: #fff3cd;
+    padding: 2rem;
+    text-align: center;
+    flex: 1;
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Bayangan lebih timbul */
+    transform: translateY(-5px); /* Menambahkan efek terangkat */
+}
+
+
+
+
+
+/* Heading */
+h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: #555;
+    margin: 1rem 0;
+}
+##contact {
+    position: relative; /* Menjaga elemen tetap dalam alur dokumen */
+    padding: 0; /* Menghapus padding */
+    margin: 0; /* Menghapus margin default */
+    background: #f4f4f4; /* Warna latar (opsional) */
+    width: 100%; /* Menyesuaikan lebar dengan halaman */
+    text-align: left; /* Rata kiri */
+}
+
+#contact p {
+    margin: 0.5rem 0; /* Memberikan jarak antar teks */
+    padding-left: 1rem; /* Opsional: Menambah indentasi */
+}
+
+#contact {
+    position: relative; /* Tetap dalam alur dokumen */
+    padding: 0; /* Menghapus padding */
+    margin: 0; /* Menghapus margin default */
+    background: #f4f4f4; /* Warna latar opsional */
+    width: 100%; /* Pastikan elemen melebar sesuai halaman */
+    text-align: left; /* Teks rata kiri */
+}
+
+#contact h2 {
+    margin: 0.5rem 1rem; /* Memberi sedikit jarak di sisi kiri dan atas */
+}
+
+#contact p {
+    margin: 0.5rem 1rem; /* Memberi jarak di sisi kiri untuk semua paragraf */
+}
+
+footer {
+    background: #333; /* Warna latar footer */
+    color: #fff; /* Warna teks footer */
+    text-align: center; /* Teks rata tengah dalam footer */
+    padding: 1rem 0; /* Jarak dalam footer */
+    margin-top: 1rem; /* Memberi jarak antara elemen di atasnya */
+    width: 100%; /* Lebar penuh footer */
+}
+
+
+
+}
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+}
+
+#home {
+    position: relative;
+    width: 100%; /* Mengisi seluruh lebar layar */
+    height: 100vh; /* Mengisi tinggi layar penuh */
+    display: flex;
+    justify-content: center; /* Memusatkan konten secara horizontal */
+    align-items: center; /*
+
+/* Default elemen tersembunyi */
+.scroll-effect {
+    opacity: 0;
+    transform: translateY(50px); /* Geser sedikit ke bawah */
+    transition: all 0.6s ease-out; /* Animasi halus */
+}
+
+/* Saat elemen terlihat */
+.scroll-effect.visible {
+    opacity: 1;
+    transform: translateY(0); /* Kembali ke posisi semula */
+}
+
+/* Reset CSS untuk konsistensi antar browser */
+body, h1, h2, h3, p, ul, li, img, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Home Section */
+#home {
+    position: relative;
+    height: 100vh;
+    background: url('your-background-image.jpg') no-repeat center center/cover;
+}
+
+#home .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#home .company-logo {
+    position: relative;
+    z-index: 2;
+    max-width: 200px;
+    margin: 50px auto;
+    display: block;
+}
+
+/* About Section */
+#about {
+    padding: 40px 20px;
+    background: #f4f4f4;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 20px;
+    text-align: center;
+    background: #222;
+    color: white;
+}
+
+.contact p {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header h1 {
+        margin-bottom: 10px;
+    }
+
+    #about h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    header nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    #about h2 {
+        font-size: 1.2rem;
+    }
+
+    #home .company-logo {
+        max-width: 150px;
+    }
+}
+
